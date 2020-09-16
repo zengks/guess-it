@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*Resets*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    margin: 0;
+    background-image: url(../images/background.jpg),
+                url(../images/background1.png);
+    background-position-x: center;
+    background-repeat: no-repeat, repeat;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+}
+/*Resets ends*/
+
+header{
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.enter-number{
+    margin-bottom: 1.3em;
+}
+
+#player-guess{
+    width: 100%;
+    height: 3em;
+    border-radius: 20px;
+    border: none;
+}
+
+#player-guess:focus{
+    outline: none;
+}
+
+
+/* To remove spinner inside input textarea for
+Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* To remove spinner inside input textarea for Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.guess-submit{
+    text-align: center;
+}
+
+#guess-button{
+    width: 50%;
+    height: 2.3em;
+    border-radius: 10px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+#guess-button:focus{
+    outline: none;
+}
+
+#guess-button:active{
+    transform: translateY(4px);
+    background-color: rgb(198, 191, 191);
+    box-shadow: 0 5px rgb(198, 191, 191);
+}
+
+.history-guess{
+    text-align: center;
+    margin-top: 1.3em;
+}
+
+footer{
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 0;
+    left: 47%;
+}
